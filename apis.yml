@@ -1,7 +1,24 @@
 aid: crabi
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/crabi.png
 name: Crabi
-description: Crabi is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Crabi is a Mexican digital auto-insurance company (insurtech) offering fully online
+  vehicle policies purchasable in about fifteen minutes from a mobile device. Coverage spans
+  material damage, theft, third-party civil liability, medical expenses, and roadside and legal
+  assistance across 27 Mexican states, sold and serviced through its mobile apps, online quoter
+  (cotizador), and customer login portal. The company is regulated in Mexico by the CNSF and
+  CONDUSEF and is a portfolio company of 500 Global. Crabi publishes no public developer API,
+  documentation, or SDKs; this profile captures its identity and public web surface.
 url: https://raw.githubusercontent.com/api-evangelist/crabi/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Insurance
+- Insurtech
+- Auto Insurance
+- Mexico
+- Financial Services
+- Fintech
+- Mobile
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/crabi-domain-security.yml
 - type: Website
   url: https://crabi.com
+- type: SignUp
+  url: https://cotizador.crabi.com/quoter/contract/data/vehicle-info
+- type: Login
+  url: https://login.crabi.com/log-in
+- type: Support
+  url: https://crabi.com/preguntas-frecuentes
+- type: Blog
+  url: https://crabi.com/blog
+- type: TermsOfService
+  url: https://crabi.com/legal/terminos-y-condiciones
+- type: PrivacyPolicy
+  url: https://crabi.com/avisodeprivacidad
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
