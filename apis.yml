@@ -46,7 +46,7 @@ tags:
 - Insurtech
 - Auto Insurance
 - Mexico
-- Financial-Services
+- Financial Services
 - Fintech
 - Mobile
 tags_raw:
@@ -58,6 +58,7 @@ tags_raw:
 - Financial Services
 - Fintech
 - Mobile
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
